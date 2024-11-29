@@ -1,0 +1,110 @@
+/* Estilo geral do componente de doação */
+.donation-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Cabeçalho do componente */
+.donation-header {
+    margin-bottom: 30px;
+}
+
+.donation-title {
+    font-size: 2.5rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.donation-text {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Conteúdo principal do componente */
+.donation-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Estilo da seção de QR Code */
+.donation-qr {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.donation-qr-image {
+    max-width: 5rem;
+    height: 5rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.donation-qr-image:hover {
+    transform: scale(1.1);
+}
+
+.donation-qr-text {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+/* Seção de informações sobre a doação */
+.donation-info {
+    flex: 1;
+    max-width: 45%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.donation-info-title {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.donation-list {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #34495e;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.donation-list li {
+    margin-bottom: 15px;
+}
+
+.donation-button {
+    background-color: #2980b9;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donation-button:hover {
+    background-color: #1a6b92;
+}

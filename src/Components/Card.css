@@ -1,0 +1,60 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Ajuste o tamanho da área onde os cards vão se posicionar */
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(29, 29, 29, 0.842);
+  padding: 20px;
+  border-radius: 10px;
+  color: #cacaca;
+  max-width: 350px;
+  margin: 15px;
+  position: absolute;
+  border: 2px solid white;
+}
+
+/* Posições aleatórias usando nth-child */
+.cards-container .card:nth-child(1) {
+  top: 10%;
+  left: 5%;
+}
+
+.cards-container .card:nth-child(2) {
+  top: 30%;
+  left: 50%;
+}
+
+.cards-container .card:nth-child(3) {
+  top: 60%;
+  left: 70%;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+

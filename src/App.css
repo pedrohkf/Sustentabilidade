@@ -1,0 +1,73 @@
+@import "leaflet/dist/leaflet.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leaflet-container {
+  height: 500px; /* Altura do mapa */
+  width: 100%;   /* Largura do mapa */
+}
+
+
+.wrapper,
+.content {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.section2 {
+  /* background-image: url("https://cdn.pixabay.com/photo/2016/06/21/15/55/nuclear-waste-1471361_1280.jpg"); */
+  background-image: url("https://cdn.pixabay.com/photo/2024/02/08/07/27/industry-8560448_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.content .section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.content .section.hero {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/01/35/river-1866579_1280.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-container {
+  width: 100%;
+  height: 110vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  perspective: 500px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.cards-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
